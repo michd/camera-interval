@@ -65,8 +65,6 @@ void intervalBtnClicked() {
       intervalTicks = (int)(MIN_INTERVAL / TICK_MS);
     }
   }
-  Serial.println(((time - lastPressTime) / TICK_MS));
-  Serial.println(intervalTicks);
   lastPressTime = time;
   resetInterval();
 }
